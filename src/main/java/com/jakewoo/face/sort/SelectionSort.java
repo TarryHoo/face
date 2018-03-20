@@ -2,8 +2,16 @@ package com.jakewoo.face.sort;
 
 /**
  * 选择排序
+ *
  */
 public class SelectionSort {
+
+    /**
+     * 选择排序
+     * 将当前元素挨个和其它所有元素对比 然后交换,继续对比
+     * T(n) = O(n2)  最差情况：T(n) = O(n2)  平均情况：T(n) = O(n2)
+     * @param arr
+     */
     public static void selectionSort(int[] arr){
         if(arr == null || arr.length < 2){
             return;
